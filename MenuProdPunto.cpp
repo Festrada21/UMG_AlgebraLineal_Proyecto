@@ -6,7 +6,7 @@ int main(){
 	int opcion;
 	do{
 		system("cls");
-		cout<<"Que operacion desea realizar?"<<endl;
+		cout<<"¿Que operación desea realizar?"<<endl;
 		cout<<"1. Suma de Vectores"<<endl;
 		cout<<"2. Resta de Vectores"<<endl;
 		cout<<"3. Producto Escalar"<<endl;
@@ -100,7 +100,7 @@ int main(){
 		}
 		
 		else if(opcion == 4){
-			cout<<"ï¿½Producto Cruz en R2/1 o R3/2?"<<endl;
+			cout<<"¿Producto Cruz en R2/1 o R3/2?"<<endl;
 			int pc;
 			cin>>pc;
 			switch(pc){
@@ -187,7 +187,7 @@ int main(){
 		
 		else if(opcion == 5){
 			
-			cout<<"ï¿½Producto Punto en R2/1 o R3/2?"<<endl;
+			cout<<"¿Producto Punto en R2/1 o R3/2?"<<endl;
 			int pp;
 			cin>>pp;
 			switch(pp){
@@ -274,9 +274,9 @@ int main(){
 					cout<<"Opcion invalida"<<endl;
 			}					
 		}else if(opcion == 6){
-            cout<<"Saliendo del programa. ï¿½Hasta Pronto!"<<endl;
+            cout<<"Saliendo del programa. ¡Hasta Pronto!"<<endl;
         } else {
-            cout<<"Opcion no valida. Por favor, elija una opciï¿½n valida."<<endl;
+            cout<<"Opcion no valida. Por favor, elija una opción valida."<<endl;
         }
         
     system("pause");    
