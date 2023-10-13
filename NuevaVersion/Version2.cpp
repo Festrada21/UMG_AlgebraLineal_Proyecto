@@ -74,43 +74,73 @@ int main() {
     }
     cout << "El producto escalar de los vectores es: " << escalar << endl;
 } else if (opcion == 4) {
-   int dim = 3;
-   float u[dim], v[dim], cruz[dim];
-   cout<<"Ingrese las componentes del primer vector:"<<endl;
-   for(int i=0;i<dim;i++){
-       cin>>u[i];
-   }
-   cout<<"Ingrese las componentes del segundo vector:"<<endl;
-   for(int i=0;i<dim;i++){
-       cin>>v[i];
-   }
-   cruz[0]=u[1]*v[2]-u[2]*v[1];
-   cruz[1]=u[2]*v[0]-u[0]*v[2];
-   cruz[2]=u[0]*v[1]-u[1]*v[0];
+            int dim = 3;
+            float u[dim], v[dim], cruz[dim];
+            cout << "Ingrese las componentes del primer vector:" << endl;
+            for (int i = 0; i < dim; i++) {
+                cin >> u[i];
+            }
+            cout << "Ingrese las componentes del segundo vector:" << endl;
+            for (int i = 0; i < dim; i++) {
+                cin >> v[i];
+            }
+            
+            // Imprimir los vectores ingresados
+            cout << "Primer vector: (" << u[0];
+            for (int i = 1; i < dim; i++) {
+                cout << ", " << u[i];
+            }
+            cout << ")" << endl;
 
-   cout<<"El producto en cruz de los vectores es: ("<<cruz[0]<<", "<<cruz[1]<<", "<<cruz[2]<<")"<<endl;
+            cout << "Segundo vector: (" << v[0];
+            for (int i = 1; i < dim; i++) {
+                cout << ", " << v[i];
+            }
+            cout << ")" << endl;
 
-} else if (opcion == 5) {
-        int dim;
-        cout << "¿En qué dimensión quieres calcular el producto punto? (2 o 3)" << endl;
-        cin >> dim;
-        float u[dim], v[dim];
-        cout << "Ingresa los componentes del primer vector:" << endl;
-        for (int i = 0; i < dim; i++) {
-            cin >> u[i];
-        }
-        cout << "Ingresa los componentes del segundo vector:" << endl;
-        for (int j = 0; j < dim; j++) {
-            cin >> v[j];
-        }
-        float punto = 0;
-        for (int k = 0; k < dim; k++) {
-            punto += u[k] * v[k];
-        }
-        cout << "El producto punto es: " << punto << endl;
-    }else {
+            cruz[0] = u[1] * v[2] - u[2] * v[1];
+            cruz[1] = u[2] * v[0] - u[0] * v[2];
+            cruz[2] = u[0] * v[1] - u[1] * v[0];
+
+            // Imprimir el resultado en forma de vector
+            cout << "El producto en cruz de los vectores es: (" << cruz[0] << ", " << cruz[1] << ", " << cruz[2] << ")" << endl;
+        } else if (opcion == 5) {
+            int dim;
+            cout << "¿En qué dimensión quieres calcular el producto punto? (2 o 3)" << endl;
+            cin >> dim;
+            float u[dim], v[dim];
+            cout << "Ingresa los componentes del primer vector:" << endl;
+            for (int i = 0; i < dim; i++) {
+                cin >> u[i];
+            }
+            cout << "Ingresa los componentes del segundo vector:" << endl;
+            for (int j = 0; j < dim; j++) {
+                cin >> v[j];
+            }
+
+            // Imprimir los vectores ingresados
+            cout << "Primer vector: (" << u[0];
+            for (int i = 1; i < dim; i++) {
+                cout << ", " << u[i];
+            }
+            cout << ")" << endl;
+
+            cout << "Segundo vector: (" << v[0];
+            for (int i = 1; i < dim; i++) {
+                cout << ", " << v[i];
+            }
+            cout << ")" << endl;
+
+            float punto = 0;
+            for (int k = 0; k < dim; k++) {
+                punto += u[k] * v[k];
+            }
+
+            // Imprimir el resultado en forma de vector
+            cout << "El producto punto es: (" << punto << "k)" << endl;
+        } else {
             cout << "Opción inválida. Intente nuevamente." << endl;
-            continue;
+            // continue;
         }
 
         cout << "¿Desea realizar otra operación? (s/n)" << endl;
