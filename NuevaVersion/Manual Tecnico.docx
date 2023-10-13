@@ -1,61 +1,38 @@
-# Manual Técnico: Operaciones con Vectores en C++
+Manual Técnico - Calculadora de Vectores
+Descripción
+Este programa en C++ es una calculadora de vectores que realiza varias operaciones en vectores en dos o tres dimensiones. Las operaciones incluyen la suma de vectores, resta de vectores, producto escalar, producto cruz y producto punto.
 
-## Introducción
+Componentes Clave
+El programa consta de varios componentes clave:
 
-Este manual técnico describe el código fuente en C++ que realiza diferentes operaciones con vectores. El código incluye las siguientes operaciones:
+Menú de Opciones: Al comenzar el programa, se presenta un menú de opciones numeradas del 1 al 5. El usuario debe seleccionar una opción ingresando el número correspondiente.
 
-1. Suma de vectores
-2. Resta de vectores
-3. Producto escalar de vectores
-4. Producto cruz de vectores
-5. Producto punto de vectores
+Selección de Dimensión: Para las operaciones de suma, resta, producto escalar y producto punto, el usuario debe especificar la dimensión del espacio (2D o 3D) en la que desea realizar la operación.
 
-El manual está dirigido a programadores que deseen entender el funcionamiento del código y realizar modificaciones o mejoras.
+Entrada de Vectores: El programa solicita al usuario que ingrese las componentes de dos vectores. Las componentes se ingresan una a una.
 
-## Requisitos
+Cálculos: El programa realiza los cálculos necesarios según la opción seleccionada por el usuario. Esto incluye la suma de vectores, resta de vectores, cálculo del producto escalar, cálculo del producto cruz y cálculo del producto punto.
 
-Para compilar y ejecutar el código, se requiere lo siguiente:
+Resultados: Los resultados de las operaciones se muestran en formato de vector, lo que facilita la visualización de los resultados en su forma geométrica. Los vectores se presentan con paréntesis y comas.
 
-- Un compilador de C++ compatible con el estándar C++11 o superior.
-- Un sistema operativo compatible con la biblioteca estándar de C++.
-- Un editor de texto o entorno de desarrollo integrado (IDE) compatible con C++.
+Iteración: Después de completar una operación, el programa pregunta al usuario si desea realizar otra operación. Si el usuario ingresa 's' o 'S', se repite el proceso; de lo contrario, el programa termina.
 
-## Estructura del Código
+Uso del Programa
+Para usar la calculadora de vectores, sigue estos pasos:
 
-El código fuente se encuentra en un archivo llamado `vectores.cpp`. El archivo incluye la librería `<iostream>` y usa el espacio de nombres `std`. La función principal `main` declara una variable `opcion` y usa un bucle `do-while` para mostrar un menú con cinco opciones: suma, resta, producto escalar, producto cruz y producto punto de vectores.
+Ejecuta el programa.
 
-El código utiliza la función `system` para limpiar la pantalla cada vez que se elige una opción. También utiliza la función `cout` para imprimir mensajes en la pantalla y la función `cin` para leer datos del teclado.
+Selecciona una opción del menú ingresando el número correspondiente.
 
-## Operaciones con Vectores
+Para las operaciones que requieren una dimensión (suma, resta, producto escalar y producto punto), especifica si deseas trabajar en un espacio 2D o 3D.
 
-### Suma de Vectores
+Ingresa las componentes de los vectores cuando se te solicite.
 
-La suma de dos vectores se realiza componente a componente. El código pide al usuario que ingrese los componentes de los dos vectores y luego muestra el resultado en la pantalla.
+El programa calculará la operación y mostrará el resultado en forma de vector.
 
-### Resta de Vectores
+Puedes optar por realizar otra operación o finalizar el programa.
 
-La resta de dos vectores se realiza componente a componente. El código pide al usuario que ingrese los componentes de los dos vectores y luego muestra el resultado en la pantalla.
-
-### Producto Escalar de Vectores
-
-El producto escalar de dos vectores se calcula sumando el producto de las componentes correspondientes. El código pide al usuario que ingrese los componentes de los dos vectores y luego muestra el resultado en la pantalla.
-
-### Producto Cruz de Vectores
-
-El producto cruz de dos vectores se calcula utilizando la regla del determinante. El código pide al usuario que ingrese los componentes de los dos vectores y luego muestra el resultado en la pantalla.
-
-### Producto Punto de Vectores
-
-El producto punto de dos vectores se calcula sumando el producto de las componentes correspondientes. El código pide al usuario que ingrese los componentes de los dos vectores y luego muestra el resultado en la pantalla.
-
-## Mejoras Futuras
-
-El código podría mejorarse en varios aspectos, como por ejemplo:
-
-- Validación de datos: Actualmente, el código no valida si los datos ingresados por el usuario son correctos o no.
-- Optimización: Es posible mejorar el rendimiento del código utilizando técnicas como la paralelización o la vectorización.
-- Modularización: El código podría dividirse en módulos más pequeños para facilitar su mantenimiento y reutilización.
-
-## Conclusión
-
-Este manual técnico describe el funcionamiento del código fuente en C++ que realiza diferentes operaciones con vectores. Esperamos que este manual sea útil para programadores interesados en entender o mejorar este código.
+Notas
+Las operaciones de suma, resta, producto escalar y producto punto se pueden realizar tanto en un espacio 2D como 3D.
+El producto cruz se realiza únicamente en un espacio 3D debido a su naturaleza tridimensional.
+Este manual técnico proporciona una descripción general del programa, sus características y cómo utilizarlo. Si tienes alguna pregunta o necesitas más detalles sobre el funcionamiento del programa, no dudes en consultar.
